@@ -1,21 +1,23 @@
-//import logo from './logo.svg';
-import { Route } from 'react-router';
+//import logo from './logo.svg'; 
 import './App.css';
+import {Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
-
+import Navbar from './components/Navbar';
+import AddItem from './pages/AddItem';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Navbar />
       <Route path='/' exact>
         <Home />
       </Route>
       <Route path='/cart'>
         <Cart />
       </Route>
-      <Route path='add-item' >
-        <div>Pole veel valmis</div>
+      <Route path='/add-item'>
+        <AddItem />
       </Route>
     </div>
   );
