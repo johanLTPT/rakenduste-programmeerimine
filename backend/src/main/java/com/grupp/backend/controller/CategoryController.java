@@ -26,5 +26,5 @@ public class CategoryController {
         //Localhost:8080/categories
 
     //Delete, edit päringud
-    //view one item päring
+    //view one category päring
 }
