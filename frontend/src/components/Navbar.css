@@ -1,8 +1,8 @@
 .navbar {
     background-color: rgb(187, 255, 148);
-    height: 150px;
+    height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .cart {
     height: 50px;
@@ -11,4 +11,58 @@
 .logo {
     height: 50px;
     margin: 50px;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .cart{
+      animation: cart infinite 1s alternate linear;
+    }
+    .logo{
+        animation: logo infinite 15s alternate linear;
+    }
+    .viewcategory{
+        animation: viewcategory infinite 5s alternate linear;
+    }
+    /*.navbar{
+        animation: changeBG infinite 2s;
+    }*/
+  }
+@keyframes cart {
+    from {
+        transform: translateX(0%);
+      }to {
+        transform: translateX(800%);
+      }
+}
+@keyframes logo {
+    from {
+        transform: translateY(0%);
+      }to {
+        transform: translateY(-100%);
+      }
+}
+@keyframes viewcategory {
+    from {
+        transform:scale(1);
+        color: rgb(0, 0, 255);
+      }to {
+        transform:scale(2);
+        color: rgb(255, 0, 0);
+      }
+}
+@keyframes changeBG {
+    0%{
+        background-color: rgb(0, 0, 255);
+    }
+    25%{
+        background-color: rgb(0, 255, 0);
+    }
+    50%{
+        background-color: rgb(255, 0, 0);
+    }
+    75%{
+        background-color: rgb(255, 255, 255);
+    }
+    100%{
+        background-color: rgb(0, 0, 0);
+    }
 }

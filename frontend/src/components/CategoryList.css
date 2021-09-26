@@ -1,0 +1,26 @@
+/*div.categoryName{
+    border: 1px red solid;
+}
+div.categoryPrice{
+    border: 1px blue solid;
+}
+div.categoryType{
+    border: 1px greenyellow solid;
+}*/
+div.CategoryElement{
+    border: 5px greenyellow solid;  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .CategoryElement{
+      animation: border-change infinite 1s linear alternate;
+    }
+  }
+@keyframes border-change {
+    from {
+        border: 5px greenyellow solid;
+    }
+    to {
+        border: 5px rgb(225, 253, 182) solid;
+    }
+  }

@@ -8,6 +8,9 @@ function Navbar(){
             </Link>
             <Link to="cart">
                 <img src="cart.svg" alt="" className="cart"/>   
+            </Link>
+            <Link to="view-category">
+                <div className="viewcategory">Vaata kategooria</div>  
             </Link> 
         </div>
     );

@@ -23,7 +23,12 @@ function Home() {
             <Link to="add-item">
                 <button>Lisa uus ese</button>
             </Link>
-            <ItemList items={loadedItems}/>
+            <div>
+                <h2>Esemed</h2>
+                <ItemList items={loadedItems}/></div>
+            <div>
+                <img src="graphic.png" alt="" className="graphic" style={{height:150 + 'px'}}/>
+            </div>
         </div>
     )
 }

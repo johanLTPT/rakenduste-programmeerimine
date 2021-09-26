@@ -1,0 +1,30 @@
+.CategoryInput{
+    border: 12px red solid;
+}
+h1{
+
+}
+@media (prefers-reduced-motion: no-preference) {
+    h1{
+      animation: title-spin infinite 20s linear;
+    }
+    .CategoryInput{
+        animation: border-change2 infinite 1s alternate;
+      }
+  }
+@keyframes title-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+@keyframes border-change2 {
+    from {
+        border: 5px rgb(255, 0, 0) solid;
+    }
+    to {
+        border: 5px rgb(253, 230, 182) solid;
+    }
+  }
