@@ -18,9 +18,10 @@ public class ItemController {
         return itemService.getItems();
     }
     @PostMapping("items")
-        public String postItems(@RequestBody  Item item) {
+        public void postItems(@RequestBody  Item item) {
         itemService.saveItem(item);
-        return "Ese edukalt lisatud " + item.getName();}
+        //return "Ese edukalt lisatud " + item.getName();
+        }
         //Localhost:8080/items
 
     //Delete, edit päringud
