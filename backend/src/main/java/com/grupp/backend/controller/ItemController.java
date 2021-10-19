@@ -23,7 +23,19 @@ public class ItemController {
         //return "Ese edukalt lisatud " + item.getName();
         }
         //Localhost:8080/items
+    @DeleteMapping("delete-item/{id}")
+        public List<Item> deleteItem(@PathVariable long id){
+            itemService.deleteItem(id);
+            return itemService.getItems();
+        }
 
-    //Delete, edit päringud
+    @PostMapping("edit-item")
+        public void editItem(@RequestBody Item item){
+        itemService.editItem(item);
+    }
+    @GetMapping("view-item/{id}")
+    public Item getOneItem(@PathVariable long id)throws Exception{
+      return itemService.getOneItem(id);
+    }
     //view one item päring
 }
