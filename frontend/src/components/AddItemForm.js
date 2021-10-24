@@ -18,15 +18,15 @@ function AddItemForm(props){
         props.onAddItem(item);
     }
     return(
-    <div>
-    <form onSubmit={formSubmitHandler}>
+    <div className="iteminput">
+    <form className="itemform" onSubmit={formSubmitHandler}>
         <label>Eseme nimi</label><br/>
         <input type="text" placeholder="Nimi" required ref={nameInputRef}/><br/>
         <label>Eseme hind</label><br/>
         <input type="number" placeholder="Hind" required ref={priceInputRef}/><br/>
         <label>Eseme Kategooria</label><br/>
         <input type="text" placeholder="Kategooria" required ref={categoryInputRef}/><br/>
-        <button>Sisesta uus ese</button>
+        <button className="nupp">Sisesta uus ese</button>
     </form>
     </div>
     )

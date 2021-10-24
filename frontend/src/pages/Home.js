@@ -1,6 +1,7 @@
 import ItemList from '../components/ItemList';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import './Home.css';
 function Home() {
     const [isLoading, setIsLoading] = useState(true);
     const [loadedItems,setLoadedItems] = useState([]);
@@ -21,10 +22,11 @@ function Home() {
     return (
         <div>
             <Link to="add-item">
-                <button>Lisa uus ese</button>
+            <button>🆒🆕Lisa uus ese🆓</button>
             </Link>
-            <div>
-                <h2>Esemed</h2>
+            <div className="esemed">
+                
+                <h2 className="eseh2">Esemed↔️</h2>
                 <ItemList items={loadedItems}/></div>
             <div>
                 <img src="graphic.png" alt="" className="graphic" style={{height:150 + 'px'}}/>

@@ -1,3 +1,41 @@
-form{
-    text-align: center;
+.iteminput{
+    text-align: center;    
 }
+.itemform{
+    margin: auto;
+    width: 200px;
+    border: 1px solid green;
+}
+input{
+    margin-bottom: 40px;
+    border: 1px solid green;
+}
+input:hover{
+    animation: border-change infinite 1s linear alternate;
+}
+button{
+    width: 100%;
+    height: 30px;
+    background-color: greenyellow;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .nupp{
+        animation: background-change infinite 1s linear alternate;
+}}
+@keyframes border-change {
+    from {
+        border: 5px greenyellow solid;
+    }
+    to {
+        border: 5px rgb(225, 253, 182) solid;
+    }
+}
+@keyframes background-change {
+    from {
+        background-color: 5px greenyellow solid;
+    }
+    to {
+        background-color: 5px rgb(225, 253, 182) solid;
+    }
+}
+

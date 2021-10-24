@@ -1,7 +1,7 @@
-import Item from '../components/Item';
+import Item from './Item';
 function ItemList(props){
     return(
-        <div>
+        <div className="asi">
             {props.items.map(item=> (
                 <Item key={item.id} name={item.name} price={item.price} category={item.category} />
             ))}

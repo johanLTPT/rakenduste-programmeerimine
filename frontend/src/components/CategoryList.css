@@ -7,8 +7,17 @@ div.categoryPrice{
 div.categoryType{
     border: 1px greenyellow solid;
 }*/
-div.CategoryElement{
-    border: 5px greenyellow solid;  
+.categorylist{
+    display: flex;
+}
+.CategoryElement{
+    border: 5px greenyellow solid;
+    background-color: rgb(229, 250, 217);
+    width: 150px;
+    margin: 10px;
+}
+.kats{
+    border: 10px solid rgb(225, 253, 182);
 }
 
 @media (prefers-reduced-motion: no-preference) {

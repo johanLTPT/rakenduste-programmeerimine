@@ -22,7 +22,7 @@ function ViewCategory(){
             <Link to="add-category">
                 <button>Lisa uus kategooria</button>
             </Link>
-            <div>
+            <div className="kats">
                 <h2>Kategooriad</h2>
                 <CategoryList categories={loadedCategories}/>
             </div>

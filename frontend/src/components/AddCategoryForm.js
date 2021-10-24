@@ -18,7 +18,8 @@ function AddCategoryForm(props){
     }
     return(
     <div>
-    <form onSubmit={formSubmitHandler}>
+    <form className="catform" onSubmit={formSubmitHandler}>
+    <button className="catbutton">Sisesta uus ese</button>
         <label>Kategooria nimi</label><br/>
         <input type="text" placeholder="Nimi" required ref={nameInputRef}/><br/>
         <label>Eseme hind</label><br/>
@@ -29,7 +30,7 @@ function AddCategoryForm(props){
             <option value="PREMIUM">PREMIUM</option>
             <option value="DELUXE">DELUXE</option>
         </select><br/>
-        <button>Sisesta uus ese</button>
+        
     </form>
     </div>
     )

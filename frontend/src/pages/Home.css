@@ -1,0 +1,61 @@
+.ese{
+    margin: 20px;
+    padding: 0px 10px;
+    border: rgb(179, 179, 179) 1px solid;
+    box-shadow: 5px 5px rgb(235, 235, 235);
+}
+.esemed{
+    padding: 10px;
+    background-color: rgb(228, 255, 215);
+}
+.asi{
+    display: flex;
+    border: rosybrown 1px solid;
+    background-color: white;
+}
+.itemName{
+    color: red;
+}
+.itemPrice{
+    text-decoration-line: underline;
+}
+.itemCategory{
+    font-style: italic;
+}
+.graphic{
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .eseh2{
+        animation: aaa infinite 10s alternate linear;
+    }
+    .ese{
+        animation: esek infinite 3s alternate linear;  
+    }
+    .graphic{
+        animation: fade infinite 3s alternate linear;     
+    }
+}
+
+@keyframes esek {
+    from {
+        transform: translateY(0%);
+      }to {
+        transform: translateY(-10%);
+      }
+}
+
+@keyframes aaa {
+    from {
+        transform: translatex(0%);
+      }to {
+        transform: translateX(5%);
+      }
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+      }to {
+        opacity: 1;
+      }
+}

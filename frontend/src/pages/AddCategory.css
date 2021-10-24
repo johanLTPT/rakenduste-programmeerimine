@@ -1,9 +1,18 @@
 .CategoryInput{
     border: 12px red solid;
 }
-h1{
-
+.catform{
+ display: flex;
+ padding: 25px;
 }
+.catform > *:not(:last-child) {
+  margin: 10px; 
+}
+.catbutton{
+  margin: auto;
+  background-color: red !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     h1{
       animation: title-spin infinite 20s linear;
